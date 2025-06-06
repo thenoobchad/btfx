@@ -8,11 +8,11 @@ export const UserNavbar = () => {
     <nav className="w-full p-2 z-10 ">
       <div className="relative flex justify-between">
         <a href="/">
-          <h4 className="font-bold">BTFX</h4>
+          <h4 className="font-bold text-2xl">BTFX.</h4>
         </a>
         <div className="flex items-center gap-4">
           
-          <div className={`${isActive && "fixed"} top-2 right-[5px] z-10`}>
+          <div className={`${isActive && ""} top-10 right-[5px] z-10 fixed`}>
             <NavBtn isActive={isActive} setIsActive={setIsActive} />
           </div>
           <MenuBar isActive={isActive} />
@@ -35,13 +35,13 @@ const NavBtn = ({ isActive, setIsActive }:{isActive:boolean, setIsActive:Dispatc
     return (
       <button
         onClick={() => setIsActive(!isActive)}
-        className="flex flex-col gap-[5px] justify-center h-8 w-12 p-2 bg-white z-10"
+        className="flex flex-col gap-[5px] justify-center h-8 w-12 p-2 z-10"
       >
         <div
-          className={`h-1 w-8 rounded-sm bg-black transition-all duration-300 ${isActive && "translate-y-1 rotate-45"}`}
+          className={`h-1 w-8 rounded-sm bg-white transition-all duration-300 ${isActive && "translate-y-1 rotate-45"}`}
         />
         <div
-          className={`h-1 w-8 rounded-sm bg-black transition-all duration-300 ${isActive && "-translate-y-1 -rotate-45"}`}
+          className={`h-1 w-8 rounded-sm bg-white transition-all duration-300 ${isActive && "-translate-y-1 -rotate-45"}`}
         />
       </button>
     );
@@ -59,7 +59,7 @@ const MenuBar = ({isActive}: {isActive: boolean}) => {
           {userNavlist.map((item) => (
             <li
               key={item}
-              className="text-sm font-semibold tracking-widest capitalize hover:underline"
+              className="text-lg font-semibold tracking-widest capitalize hover:underline"
             >
               <a href={`/${item.toLowerCase()}`}>{item}</a>
             </li>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-    <main className="flex flex-col z-0">
+    <main className="flex flex-col -z-1">
     <section id="hero" className="w-full bg-black text-white">
       <div className="container mx-auto">
         <div className="flex h-full min-h-screen flex-col-reverse items-center p-2 md:flex-row">
