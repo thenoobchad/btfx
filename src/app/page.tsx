@@ -60,7 +60,7 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="flex flex-col rounded-sm border bg-white p-6">
+            <div className="flex flex-col rounded-sm border bg-white p-6 -z-10">
               <h4 className="my-4 text-2xl font-bold">Copy Trading</h4>
               <ul className="mt-2 flex flex-col gap-4">
                 <li>Copy top traders</li>
