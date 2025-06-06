@@ -1,5 +1,6 @@
 import Copy from "@/components/Copy";
 import { HorizontalScroll } from "@/components/horizontal-scroll";
+import { Check } from "lucide-react";
 
 export default function Home() {
   return (
@@ -410,70 +411,49 @@ export default function Home() {
       </div>
     </section> */} 
 
-    <section id="details" className="w-full px-2 pt-8">
-      <div className="mx-auto">
-        <div className="">
-          <div className="flex flex-wrap items-center justify-center gap-10">
+    <section id="details" className="w-full px-2 pt-8 ">
+      <div className="mx-auto container flex flex-col justify-center items-center">
+        <div className="my-10">
+          <div className="w-full grid grid-col-1 grid-rows-4 gap-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2">
             {/* INVESTMENT PLANS */}
-            <div className="flex w-[240px] flex-col gap-4 rounded-sm border-2 border-amber-500 border-x-gray-100 p-6 py-4">
-              <h4 className="flex w-full justify-center text-xl font-bold tracking-widest uppercase">
-                Premium
+            <div className="flex w-[350px] h-[550px] flex-col gap-4 rounded-2xl border-2 bg-blue-500 text-white p-10 py-10">
+              <h4 className="flex w-full justify-center text-4xl font-bold tracking-tight uppercase pt-4">
+                standard
               </h4>
-              <div className="h-[2px] w-full bg-black" />
-              <h2 className="flex justify-center">
-                <span className="text-lg">$</span>
+             
+              <h2 className="flex justify-center pt-8">
+                <span className="text-2xl font-bold">$</span>
                 <span className="text-6xl font-semibold tracking-tighter">
                   1000
                 </span>
                 <span className="items-end"></span>
               </h2>
-              <ul className="flex flex-col gap-2">
-                <li className="border-b py-2">
+              <ul className="flex flex-col gap-2 w-full">
+                <li className=" py-2 flex gap-2 font-semibold"><Check className="h-5 w-5 bg-white text-blue-500 rounded-full"/>
                   Minimum <span>$1,000.00</span>
                 </li>
-                <li className="border-b py-2">
+                  <li className="py-2 flex gap-2 font-semibold">
+                  <Check className="h-5 w-5 bg-white text-blue-500 rounded-full"/>
                   Maximum <span>$5,000.00</span>
                 </li>
-                <li className="border-b py-2">10% Trade Commission</li>
-                <li className="border-b py-2">24/7 Active Support</li>
-              </ul>
+                  <li className=" py-2 flex gap-2 font-semibold"><Check className="h-5 w-5 bg-white text-blue-500 rounded-full"/>
+                    
+                    10% Trade Commission</li>
+                  <li className=" py-2 flex gap-2 font-semibold">
+                  <Check className="h-5 w-5 bg-white text-blue-500 rounded-full"/>
+                    24/7 Active Support</li>
+                </ul>
+                <div className="w-full flex justify-center mt-4">
               <a
                 href="#"
-                className="flex h-10 justify-center rounded-sm bg-orange-500 px-4 py-2 font-semibold text-white uppercase"
+                className="flex h-15 items-center justify-center rounded-sm bg-white px-6 py-2  w-fit text-blue-500 font-bold uppercase"
               >
                 Get Started
-              </a>
+                  </a>
+                  </div>
             </div>
 
-            <div className="flex w-[240px] flex-col gap-4 rounded-sm border-2 border-amber-500 border-x-gray-100 p-6 py-4">
-              <h4 className="flex w-full justify-center text-xl font-bold tracking-widest uppercase">
-                Gold
-              </h4>
-              <div className="h-[2px] w-full bg-black" />
-              <h2 className="flex justify-center">
-                <span className="text-lg">$</span>
-                <span className="text-6xl font-semibold tracking-tighter">
-                  500
-                </span>
-               
-              </h2>
-              <ul className="flex flex-col gap-2">
-                <li className="border-b py-2">
-                  Minimum <span>$1,000.00</span>
-                </li>
-                <li className="border-b py-2">
-                  Maximum <span>$5,000.00</span>
-                </li>
-                <li className="border-b py-2">10% Trade Commission</li>
-                <li className="border-b py-2">24/7 Active Support</li>
-              </ul>
-              <a
-                href="#"
-                className="flex h-10 justify-center rounded-sm bg-orange-500 px-4 py-2 font-semibold text-white uppercase"
-              >
-                Get Started
-              </a>
-            </div>
+            
           </div>
         </div>
       </div>
