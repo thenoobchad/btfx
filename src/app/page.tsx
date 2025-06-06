@@ -40,14 +40,14 @@ export default function Home() {
           <Copy delay={0.5} animateOnScroll={true}>
             <div>
               <h4 className="my-4 text-center text-xl font-bold">
-                <span className="tracking-tight uppercase">copybullct</span>{" "}
+                <span className="tracking-tight uppercase">BTFX</span>{" "}
                 is one of the most reliable <br />
                 platform you will ever trade with.
               </h4>
             </div>
           </Copy>
-          <div className="mb-4 flex flex-col gap-4 md:flex-row">
-            <div className="flex flex-col rounded-sm border bg-white p-8">
+          <div className="w-full mb-4 text-black grid grid-cols-1 gap-4 grid-rows-3 md:grid-cols-3 md:grid-rows-1 container p-2">
+            <div className="flex flex-col rounded-sm border bg-white p-6">
               <h4 className="my-4 text-2xl font-bold">Expert Traders</h4>
               <ul className="mt-2 flex flex-col gap-4">
                 <li>4x more trades per user</li>
@@ -56,26 +56,25 @@ export default function Home() {
               </ul>
             </div>
 
-            <div className="flex flex-col rounded-sm border bg-white p-8">
+            <div className="flex flex-col rounded-sm border bg-white p-6">
               <h4 className="my-4 text-2xl font-bold">Copy Trading</h4>
               <ul className="mt-2 flex flex-col gap-4">
                 <li>Copy top traders</li>
                 <li>Save time</li>
                 <li>
-                  Real time leaderboard <br />
-                  with statistics
+                  Real time leaderboard with statistics
                 </li>
               </ul>
             </div>
 
-            <div className="flex flex-col rounded-sm border bg-white p-8">
+            <div className="flex flex-col rounded-sm border bg-white p-6">
               <h4 className="my-4 text-2xl font-bold">
-                Multi-Asset <br />
+                Multi-Asset
                 Management
               </h4>
               <ul className="mt-2 flex flex-col gap-4">
                 <li>
-                  CFD's on FX, Indices, <br />
+                  CFD's on FX, Indices,
                   Metals Commodities
                 </li>
                 <li>Short & Long Trading</li>
@@ -95,18 +94,18 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="what-to-do" className="w-full bg-black px-2 pt-8 text-white">
-      <div className="container mx-auto">
+    <section id="what-to-do" className="w-full bg-black  pt-8 text-white">
+      <div className="container mx-auto ">
         <div className="flex min-h-screen flex-col items-center justify-center">
           <Copy delay={0.5} animateOnScroll={true}>
             <div>
               <h4 className="my-4 text-center text-xl font-bold">
                 Trade on the most sophisticated trading technology (CBTRADES)
-                CopyBullCT
+                BTFX
               </h4>
             </div>
           </Copy>
-          <p className="text-md my-6 font-medium">
+          <p className="text-md my-6 font-medium w-[700px]px-2 flex flex-col">
             CopyBullCT offers the fastest order execution capabilities with
             the ease and convenience of copy trading.
             <br />
@@ -122,14 +121,14 @@ export default function Home() {
     </section>
 
     <section id="steps" className="min-h-screen w-full px-2 pt-8">
-      <div className="mx-auto">
+      <div className="mx-auto container">
         <div className="flex flex-col items-center justify-center">
           <h4 className="my-4 text-center text-xl font-bold">
             Start Trading in 4 Steps
           </h4>
 
-          <div className="mb-8 flex w-full flex-wrap items-start justify-center gap-8 md:flex-row md:gap-6">
-            <div className="flex h-[350px] w-[250px] flex-col rounded-sm border bg-black p-6 text-white">
+          <div className="mb-8 grid grid-cols-1 grid-rows-4 w-full items-start justify-center gap-8 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1">
+            <div className="flex  flex-col rounded-sm border bg-black p-6 text-white">
               <div className="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-black">
                 <span className="text-2xl font-bold">1</span>
               </div>
@@ -141,7 +140,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex h-[350px] w-[250px] flex-col rounded-sm border bg-black p-6 text-white">
+            <div className="flex  flex-col rounded-sm border bg-black p-6 text-white">
               <div className="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-black">
                 <span className="text-2xl font-bold">2</span>
               </div>
@@ -153,7 +152,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex h-[350px] w-[250px] flex-col rounded-sm border bg-black p-6 text-white">
+            <div className="flex flex-col rounded-sm border bg-black p-6 text-white">
               <div className="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-black">
                 <span className="text-2xl font-bold">3</span>
               </div>
@@ -165,7 +164,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex h-[350px] w-[250px] flex-col rounded-sm border bg-black p-6 text-white">
+            <div className="flex flex-col rounded-sm border bg-black p-6 text-white">
               <div className="flex h-10 w-10 flex-col items-center justify-center rounded-full bg-white text-black">
                 <span className="text-2xl font-bold">4</span>
               </div>
@@ -196,7 +195,7 @@ export default function Home() {
           <div className="grid-col-12 grid w-full grid-rows-2 gap-4 py-20">
             {/* CARDS BEGIN HERE */}
 
-            <div className="bg-muted flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-4 md:row-span-1">
+            <div className="bg-gray-300 flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-4 md:row-span-1">
               <h4 className="my-2 text-2xl font-semibold">
                 Spread from 0.0 pips
               </h4>
@@ -213,7 +212,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="bg-muted flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-2 md:row-span-1">
+            <div className="bg-gray-300 flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-2 md:row-span-1">
               <h4 className="my-2 text-2xl font-semibold">
                 Fast Order Execution
               </h4>
@@ -228,7 +227,7 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="bg-muted flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-2 md:row-span-1">
+            <div className="bg-gray-300 flex w-full flex-col items-start rounded-sm border p-6 text-black md:col-span-2 md:row-span-1">
               <h4 className="my-2 text-2xl font-semibold">
                 Institutional Grade Trading
               </h4>
@@ -250,10 +249,10 @@ export default function Home() {
       id="difference"
       className="min-h-screen w-full bg-black px-2 py-4 text-white"
     >
-      <div className="mx-auto h-full">
+      <div className="mx-auto h-full container">
         <div className="flex h-full items-center justify-center">
-          <div className="mt-20 flex w-full flex-wrap items-end justify-center gap-4">
-            <div className="flex min-h-[400px] w-[300px] flex-col justify-between rounded-sm border-1 p-4 md:w-[200px]">
+          <div className="my-20 w-full grid grid-col-1 grid-rows-4 gap-4 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-2">
+            <div className="flex min-h-[400px] flex-col justify-between rounded-sm border-1 p-4 ">
               <img src="#" alt="image" />
               <div className="">
                 <h4 className="text-2xl font-bold">
@@ -266,7 +265,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] w-[300px] flex-col justify-between rounded-sm border-1 p-4 md:w-[200px]">
+            <div className="flex min-h-[400px] flex-col justify-between rounded-sm border-1 p-4 ">
               <img src="#" alt="image" />
               <div>
                 <h4 className="text-2xl font-bold">
@@ -279,7 +278,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] w-[300px] flex-col justify-between rounded-sm border-1 p-4 md:w-[200px]">
+            <div className="flex min-h-[400px] flex-col justify-between rounded-sm border-1 p-4 ">
               <img src="#" alt="image" />
               <div>
                 <h4 className="text-2xl font-bold">
@@ -289,7 +288,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex min-h-[400px] w-[300px] flex-col justify-between rounded-sm border-1 p-4 md:w-[200px]">
+            <div className="flex min-h-[400px] flex-col justify-between rounded-sm border-1 p-4 ">
               <img src="#" alt="image" />
 
               <div>
@@ -307,13 +306,13 @@ export default function Home() {
       </div>
     </section>
 
-    <section id="details" className="w-full px-2 pt-8">
+    {/* <section id="details" className="w-full px-2 pt-8">
       <div className="mx-auto">
         <div className="flex min-h-screen flex-col items-center justify-center">
           <div className="flex w-full flex-col items-center justify-center gap-4">
-            {/* <div className="grid gap-4 pt-30 md:grid-cols-3 md:grid-rows-2 md:gap-5"> */}
-
-            <HorizontalScroll>
+           
+              <HorizontalScroll>
+                
               <div className="bg-muted flex w-[300px] flex-col rounded-sm border p-6 text-black">
                 <div className="flex h-20 w-20 flex-col items-center justify-center rounded-sm bg-gray-200 text-black">
                   <span className="text-2xl font-bold"></span>
@@ -407,9 +406,9 @@ export default function Home() {
           </div>
 
           {/* </div> */}
-        </div>
+        {/* </div>
       </div>
-    </section>
+    </section> */} 
 
     <section id="details" className="w-full px-2 pt-8">
       <div className="mx-auto">
