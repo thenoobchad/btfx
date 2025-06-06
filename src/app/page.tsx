@@ -1,10 +1,13 @@
 import Copy from "@/components/Copy";
 import { HorizontalScroll } from "@/components/horizontal-scroll";
+import { Navbar } from "@/components/navbar";
 import { Check } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
+    <>
+      <Navbar />
+    <main className="flex flex-col z-0">
     <section id="hero" className="w-full bg-black text-white">
       <div className="container mx-auto">
         <div className="flex h-full min-h-screen flex-col-reverse items-center p-2 md:flex-row">
@@ -458,6 +461,7 @@ export default function Home() {
         </div>
       </div>
     </section>
-  </main>
+      </main>
+      </>
   );
 }
