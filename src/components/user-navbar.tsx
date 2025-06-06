@@ -50,7 +50,7 @@ const NavBtn = ({ isActive, setIsActive }:{isActive:boolean, setIsActive:Dispatc
 const MenuBar = ({isActive}: {isActive: boolean}) => {
     return (
       <div
-        className={`fixed top-0 h-screen w-[300px] z-9  bg-black text-white transition-all duration-500 ${!isActive ? "-right-100" : "right-0"}`}
+        className={`fixed top-0 min-h-screen w-[300px] z-9  bg-black text-white transition-all duration-500 flex justify-center flex-col ${!isActive ? "-right-100" : "right-0"}`}
       >
         <ul className="flex h-full w-full flex-col items-center justify-center gap-4 p-2 ">
           <p className="text-md font-semibold tracking-widest capitalize">
