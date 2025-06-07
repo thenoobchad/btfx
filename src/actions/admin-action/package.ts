@@ -1,8 +1,9 @@
 "use server"
 
 import { auth } from "@/auth"
-import { db } from "@/server/db"
-import { packages } from "@/server/schema"
+import { db } from "@/database/db"
+import { packages } from "@/database/schema"
+import { USER_ROLES } from "@/lib/constants"
 import { CreatePackageSchema } from "@/validators"
 import { eq } from "drizzle-orm"
 
@@ -10,7 +11,7 @@ export async function getAllPackageAction() {
 
     const session = await auth()
 
-    if(session?.user?.role !== "admin") throw new Error("Not authorized")
+    if(session?.user?.role !== USER_ROLES.ADMIN) throw new Error("Unauthorized")
 
     try {
         const allPackages = await db.select().from(packages)
