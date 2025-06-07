@@ -1,7 +1,7 @@
 "use server"
 
-import { db } from "@/server/db";
-import { users } from "@/server/schema"
+import { db } from "@/database/db";
+import { users } from "@/database/schema"
 import { eq } from "drizzle-orm"
 
 type UserWithoutPassword = Omit<typeof users.$inferSelect, "password">
