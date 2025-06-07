@@ -73,7 +73,9 @@ export const HorizontalScroll = ({ children, }: { children: ReactNode }) => {
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
         >
-{children}
+            
+                {children}
+             
         </div>
     )
 }
